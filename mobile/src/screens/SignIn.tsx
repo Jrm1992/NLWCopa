@@ -2,7 +2,7 @@ import { Center, Text } from "native-base";
 import { GoogleLogo } from "phosphor-react-native";
 
 import Logo from '../assets/logo.svg'
-import { Button } from "../components/button";
+import { Button } from "../components/Button";
 import { useAuth } from "../hooks/useAuth";
 
 export function SignIn(){

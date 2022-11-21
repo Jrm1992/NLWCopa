@@ -1,10 +1,12 @@
 import { VStack } from "native-base";
+import { useNavigation } from "@react-navigation/native";
 
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 import { MagnifyingGlass } from "phosphor-react-native";
 
 export function Pools(){
+  const navigation = useNavigation()
   return (
     <VStack flex={1} bgColor="gray.900">
       <Header title="Meus Boloes" />
@@ -12,6 +14,7 @@ export function Pools(){
         <Button 
           title="Buscar bolao por codigo" 
           leftIcon={<MagnifyingGlass size={20} color="#000" weight="bold" />}
+          onPress={() => navigation.navigate('find')}
           />
       </VStack>
     </VStack>
